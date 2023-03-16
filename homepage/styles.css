@@ -1,0 +1,89 @@
+.background-1 {
+  background-image: url("https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: auto;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.fontHeader {
+  margin-top: 250px;
+  font-family: "Arial";
+  font-size: 300%;
+  text-align: left;
+  margin-left: 50px;
+  color: #50577a;
+  font-weight: 800;
+}
+
+.fontQuote {
+  color: #000000;
+  font-family: "Arial";
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 200%;
+}
+
+.fontFoot {
+  color: #000000;
+  font-family: "Arial";
+  margin-top: 70px;
+  margin-left: 50px;
+  font-size: 150%;
+}
+
+.fontBio {
+  color: #000000;
+  font-family: "Times New Roman";
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 175%;
+}
+
+.pfpImg {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  left: 800px;
+  top: 150px;
+  border-radius: 40px;
+  border-radius: 50%;
+  transform: rotate(-30deg);
+  float: none;
+}
+
+#myProgress {
+  width: 25%;
+  background-color: #ddd;
+}
+
+.progress {
+  width: 25%;
+}
+
+#cprogress-bar {
+  width: 70%;
+}
+
+#cpprogress-bar {
+  width: 50%;
+}
+
+#pyprogress-bar {
+  width: 60s%;
+}
+
+#htprogress-bar {
+  width: 90%;
+}
+
+#cssprogress-bar {
+  width: 65%;
+}
+
+#bkprogress-bar {
+  width: 10%;
+}

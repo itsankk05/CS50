@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main%}
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Symbol</th>
+            <th scope="col">Shares</th>
+            <th scope="col">Price</th>
+            <th scope="col">Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i in database %}
+            <tr>
+                <td>{{ i["symbol"] }}</td>
+                <td>{{ i["shares"] }}</td>
+                <td>{{ (i["price"]) | usd }}</td>
+                <td>{{ (i["price"] * i["shares"]) | usd }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td></td>
+            <th>Cash In Hand</th>
+            <th>{{ cash | usd }}</th>
+        </tfoot>
+        <tfooter>
+            <td></td>
+            <td></td>
+            <th>TOTAL</th>
+            <th>{{ "$ 10,000"}}</th>
+        </tfooter>
+    </table>
+
+{% endblock %}
